@@ -1,0 +1,5 @@
+<h1>Tracker de Productivité</h1>
+<p>{{progressPercentage()}} %</p>
+<p>{{message()}}</p>
+<button (click)="addTask()" [disabled]="completedTasks() >= DAILY_GOAL">+1 Tâche complétée</button>
+<button (click)="reset()">Réinitialiser</button>
